@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Cryptowala</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <img src="./images/logo.png" alt="logo" class="logo">
+            <div class="icons">
+                 <i class="uil uil-youtube"></i>
+                 <i class="uil uil-search"></i>
+                 <i class="uil uil-user"></i>
+            </div>
+        </div>
+        <nav class="header-bottom">
+            <ul>
+                <li><a href="">Blockchain Basics</a></li>
+                <li><a href="">Blockchain Explainers</a></li>
+                <li><a href="">Crypto Gaming</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">Partner With Us</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-body container">
+        <div class="ads-container">
+            <img src="./images/ad-background2.png" alt="ad-image" class="ads">
+           
+            <div class="left-block"> <h1>Spend Less, Earn More</h1>
+                <h4>Earn upto 6.5% APY</h4>
+                <button class="try-now btn">Try now</button>
+            </div>
+            <button id="ad-close" onclick="closebtn()"><span>X</span></button>
+        </div>
+        <section class="banner-container">
+                <img src="./images/banner.png" alt="banner-image" class="banner">
+                <div class="left-block">
+                    <h1>Crypto industry <br> is in talks with the <br> Indian government</h1>
+                    <h4>- CoinSwitch CEO <br> Ashish.</h4>
+                    <button id="swipe-more-btn"><span> More </span></button>
+                   <div className='slider'>
+                        <input type="radio" name='swipe' className='slide'/>
+                        <input type="radio" name='swipe' className='slide'/>
+                        <input type="radio" name='swipe' className='slide'/>
+                        <input type="radio" name='swipe' className='slide'/>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+
+    <script>
+        function closebtn() {
+            console.log("you click me");
+        }
+    </script>
+</body>
+</html>
