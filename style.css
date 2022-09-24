@@ -8,6 +8,11 @@ header {
     /* background: lightblue; */
     position: relative;
 }
+section {
+    width: 90%;
+    position: relative;
+
+}
 
 .header-top {
     display: flex;
@@ -129,8 +134,8 @@ button {
 }
 
 .banner-container {
-    width: 90%;
-    position: relative;
+    /* width: 90%;
+    position: relative; */
     top: -40px;
 }
 
@@ -166,4 +171,31 @@ input {
 
 span {
     width: 100px;
+}
+
+/* Crytocurrrencies */
+table {
+    width: 100%;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* footer */
+footer {
+    padding: 10px;
+    background: #95c1e8;
+    color: white;
+}
+
+.footer-bottom ,ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin: 0; */
+}
+
+.footer-bottom ul li {
+    list-style: none;
+    margin: 0 20px;
 }
