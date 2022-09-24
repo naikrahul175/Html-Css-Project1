@@ -24,9 +24,10 @@ function loadTableData() {
     document.getElementById("table-body").innerHTML = tableData;
 }
 
-
 function closebtn() {
-    console.log("you click me");
+    //   let closebtn = document.getElementById("ad-close");
+    //   console.log(closebtn);
+    document.getElementById("ads-container").style.display = "none";
 }
 
 loadTableData()
