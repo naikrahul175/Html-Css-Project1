@@ -192,6 +192,21 @@ table {
     display: flex;
     text-align: start;
     justify-content: space-between;
+    /* position: relative; */
+}
+
+
+.card-container button {
+    background: #5ca5e4;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-radius: none;
+    display: block;
+    border-radius: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .card-container .card {
@@ -199,7 +214,9 @@ table {
     min-width:360px;
     margin: 0 20px 0 0;
     background: rgba(213,222,229,0.2);
+    position: relative;
 }
+
 
 .card-container .card  img {
     width: 100%;
