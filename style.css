@@ -117,6 +117,14 @@ button {
     margin: 0;
 }
 
+.ads-container .left-block h1 {
+    margin-left: 0;
+}
+
+.ads-container .left-block button {
+margin-top: 20px;
+}
+
 #ad-close {
     position: absolute;
     right: -20px;
@@ -132,6 +140,8 @@ button {
     right: -60px;
     color: black;
 }
+     
+        /* banner section */
 
 .banner-container {
     /* width: 90%;
@@ -151,6 +161,14 @@ button {
     left: 70px;
     color: white;
     /* background: red; */
+}
+
+.banner-container .left-block h1 {
+    margin-left: 0;
+}
+
+.banner-container .left-block button {
+    margin-top: 30px;
 }
 
 input {
@@ -182,7 +200,10 @@ table {
     text-align: center;
 
 }
-    /* Articles section */
+            /* Articles section */
+.Cryptocurrency-container {
+    text-align: center;
+}
 .Articles-container{
     text-align: center;
 }
@@ -259,6 +280,70 @@ min-height: 30px;
 .user-block h6 {
     color: #757a7e;
 }
+
+    /* Legal Update section */
+.LegalUpdate-container {
+    text-align: center;
+    
+}
+.LegalUpdate-container .LegalUpdate-body {
+    text-align: start;
+    height: 450px;
+}
+
+ .LegalUpdate-body  {
+    width: 100%;
+    /* background: red; */
+}
+
+.LegalUpdate-body .LegalUpdate-top {
+    background: lightblue;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.LegalUpdate-top h2 {
+    margin: 0 0 0 40px;
+}
+
+.LegalUpdate-body .LegalUpdate-bottom {
+    display: flex;
+    margin: 0;
+    position: relative;
+}
+
+
+.LegalUpdate-bottom .bottom-left {
+    width: 40%;
+    margin-left: 60px;
+}
+
+.bottom-left p , button{
+    margin-left: 0;
+}
+
+.bottom-left .LegalUpdate-btn {
+    background: lightblue;
+    color: white;
+}
+
+.bottom-left p {
+    font-size: 12px;
+    color: #757a7e;
+}
+
+.LegalUpdate-bottom  .bottom-right {
+    position: absolute;
+    right: 30px;
+    top: -50%;
+}
+
+.bottom-right .slider-btn {
+    margin: 0;
+    text-align: center;
+}
+
         /* footer */
 footer {
     padding: 10px;
