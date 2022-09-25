@@ -15,7 +15,7 @@ let tableData = "";
 function loadTableData() {
     crypto.map(data => {
                tableData += `<tr>
-                     <td><img src="${data.logo}" width="30px" />${data.Assets}</td>
+                     <td ><img src="${data.logo}" width="18px" />${data.Assets}</td>
                      <td>${data.UpdatePrice}</td>
                      <td>${data.Changes}</td>
                      <td><button id='Trade-btn'>Trade</button></td>

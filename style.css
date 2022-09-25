@@ -47,7 +47,7 @@ section {
 }
 
 nav {
-    background:#e5e8ea;
+    background:#efefef;
     position: relative;
     left: 20px;
    width: 90%;
@@ -69,7 +69,7 @@ ul {
 }
 
  .nav-links li a {
-    color:#9ca1a6;
+    color:#a3a3a3;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -118,7 +118,7 @@ button {
  .left-block button {
 margin-top: 20px;
 padding: 5px;
-background: lightblue;
+background:white;
 }
 
 #ad-close {
@@ -156,15 +156,23 @@ background: lightblue;
     top: 30px;
     left: 70px;
     color: white;
+    width: 300px;
     /* background: red; */
 }
 
 .banner-container .left-block h1 {
     margin-left: 0;
+    font-size: 30px;
+    font-weight: bold;
 }
 
+.banner-container .left-block h4 {
+    font-size: 17px;
+    margin-top: 10px;
+}
 .banner-container .left-block button {
-    margin-top: 30px;
+    padding: 10px;
+    width: 123px;
 }
 
 input {
@@ -173,14 +181,15 @@ input {
 }
 
 #swipe-more-btn span {
-    position:relative;
-    left: -30px;
+    position: relative;
+    left: -34px;
     border-radius: 20px;
-    background: lightblue;
-    padding: 10px;
+    background: #4faed9;
+    padding: 11px 27px;
     font-weight: bold;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    width: 219px;
 }
 
 span {
@@ -191,10 +200,79 @@ span {
 
 table {
     width: 100%;
-    border:1px solid rgba(0,0,0,0.3);
-    border-radius: 10px;
+    border: 1px solid #e5e1e1;
+    border-radius: 20px;
     text-align: center;
+}
 
+
+table th {
+    padding: 20px;
+    width: 250px;
+    text-align: justify;
+    /* margin-left: 79px; */
+    position: relative;
+    left: 65px;
+}
+
+
+table tr {
+    margin: 0;
+}
+
+tbody tr td:nth-child(1) {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    position: relative;
+    left: 50px;
+}
+
+tbody tr td:nth-child(2) {
+    text-align: left;
+    position: relative;
+    left: 90px;
+}
+
+tbody tr td:nth-child(3) {
+    text-align: left;
+    position: relative;
+    left: 90px;
+}
+
+tbody tr td:nth-child(1) img{
+    margin: 0 10px;
+}
+
+#Trade-btn  {
+    color: #4ea3e0;
+    background: white;
+    border: 1px solid mediumblue;
+}
+
+ .line {
+    border: 1px solid #e5e1e1;
+    position: relative;
+    left: 85px;
+    top: 79px;
+    width: 81%;
+}
+
+tfoot td .line {
+    position: absolute;
+    width: 81%;
+    top: 80%;
+}
+
+.view-crypto {
+    padding: 10px;
+    width: max-content;
+    position: relative;
+    left: 150%;
+    margin: 29px 0;
+    background: #4ea3e0;
+    color: white;
+    font-weight: bold;
 }
             /* Articles section */
 .Cryptocurrency-container {
@@ -214,7 +292,7 @@ table {
 
 
 .card-container button {
-    background: #5ca5e4;
+    background: #4897e3;
     position: absolute;
     top: 20px;
     left: 10px;
@@ -293,7 +371,7 @@ min-height: 30px;
 }
 
 .LegalUpdate-body .LegalUpdate-top {
-    background: lightblue;
+    background: #5de7c3;
     margin: 0;
     padding: 20px;
     color: white;
@@ -320,7 +398,7 @@ min-height: 30px;
 }
 
 .bottom-left .LegalUpdate-btn {
-    background: lightblue;
+    background: #4ea3e0;
     color: white;
 }
 
@@ -469,7 +547,7 @@ right: 40%;
 .view-btn {
     padding: 5px;
     width: 120px;
-    background:lightblue;
+    background:#4ea3e0;
 }
 
         /* Insights section */
@@ -502,17 +580,18 @@ right: 40%;
     text-align: left;
     width: 70%;
     height: 200px;
-    background: rgba(213,222,229,0.2);
+    background:#f3f3f3;
     margin: 10px 0;
 }
 
 .col-2 button {
     margin: 0 0 0 20px;
+    background: #4ea3e0;
 }
         /* footer */
 footer {
     padding: 10px;
-    background: #95c1e8;
+    background: #4da9dc;
     color: white;
     position: relative;
     bottom: -30px;
