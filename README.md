@@ -4,5 +4,5 @@
 
 2. Responsive for deksktop ans mobiles(480px).
 
-3 Below 480 pixel is recommended to watch.
+3. Below 480 pixel is recommended to watch.
 
