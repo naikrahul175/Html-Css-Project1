@@ -310,7 +310,9 @@ display: flex;
     /* position: relative; */
 }
 
-
+.card-mb-col {
+    margin: 0;
+}
 .card-container button {
     background: #4897e3;
     position: absolute;
@@ -754,6 +756,15 @@ footer {
         width: 100%;
         margin: 10px;
     }
+
+    .card-container button {
+        padding: 5px;
+        font-size: 10px;
+        top: 0;
+        left: 0;
+        width: 55px;
+    }
+
     .card .card-mb-col:nth-child(1){
         width: 45%;
         height: 150px;

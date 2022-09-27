@@ -37,9 +37,9 @@
                 <h4>Earn upto 6.5% APY</h4>
                 <button class="try-now btn">Try now</button>
             </div>
-            <button id="ad-close" onclick="closebtn()"><span>X</span></button>
+            <button id="ad-close" onclick="closebtn('ads-container')"><span>X</span></button>
         </div>
-        <section class="banner-container section-1">
+        <section class="banner-container section-1" id="banner-container">
                 <img src="./images/banner.png" alt="banner-image" class="banner">
                 <div class="left-block">
                     <h1>Crypto industry <br> is in talks with the <br> Indian government</h1>
@@ -69,23 +69,23 @@
                 <tr>
                     <td>
                         <div class="line"></div> 
-                        <button class="view-crypto">View All Cryptocurrencies</button>
+                        <button class="view-crypto" id="view-crypto" onclick="viewMore()">View All Cryptocurrencies</button>
                     </td> 
                 </tr>
             </tfoot>
             </table>
         </section>
         <div class="ads-container row">
-            <div class="ads-col">
+            <div class="ads-col" id="ads-col-1">
                 <img src="./images/ad-background2.png" alt="ad-image" class="ads">
             
                 <div class="left-block"> <h1>Spend Less, Earn More</h1>
                     <h4>Earn upto 6.5% APY</h4>
                     <button class="try-now btn">Try now</button>
                 </div>
-                <button id="ad-close" onclick="closebtn()"><span>X</span></button>
+                <button id="ad-close" onclick="closebtn('ads-col-1')"><span>X</span></button>
             </div>
-            <div class="ads-col">
+            <div class="ads-col" id="ads-col-2">
                 <img src="./images/ad-background3.png" alt="ad-image" class="ads">
             
                 <div class="left-block"> <h1>Spend Less, Earn More</h1>
@@ -101,7 +101,7 @@
             <div class="card-container">
                 <div class="card" id="card">
                     <div class="card-mb-col">
-                        <button id="category">Category</button>
+                        <button id="category" onclick="viewMore()">Category</button>
                         <img src="./images/1.png" alt="card-image" class="card-image">
                     </div>
                     <div class="card-mb-col">
@@ -118,7 +118,7 @@
                 </div>
                 <div class="card" id="card">
                     <div class="card-mb-col">
-                        <button id="category">Category</button>
+                        <button id="category"  onclick="viewMore()">Category</button>
                         <img src="./images/2.png" alt="card-image" class="card-image">
                     </div>
                     <div class="card-mb-col">
@@ -135,7 +135,7 @@
                 </div>
                 <div class="card" id="card">
                     <div class="card-mb-col">
-                        <button id="category">Category</button>
+                        <button id="category"  onclick="viewMore()">Category</button>
                         <img src="./images/3.png" alt="card-image" class="card-image">
                     </div>
                     <div class="card-mb-col">
@@ -183,28 +183,28 @@
             <div class="Videos-body" >
                 <div class="Video-left" >
                     <img src="./images/video1.png" alt="video" />
-                      <button  class=' vl-btn play-btn' id="vlbtn"><i class="uil uil-play"></i></button>
+                      <button  class=' vl-btn play-btn' id="vlbtn"  onclick="viewMore()"><i class="uil uil-play"></i></button>
                       <p class='col-1 text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
                 <div class="Video-middle">
                   <div class="Video-middle-top">
                     <img src="./images/video2.png" alt="video" />
-                      <button  class="vmt-btn play-btn"  id="vmtbtn"><i class="uil uil-play"></i></button>
+                      <button  class="vmt-btn play-btn"  id="vmtbtn"  onclick="viewMore()"><i class="uil uil-play"></i></button>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                   <div class='Video-middle-bottom'>
                     <img src="./images/video3.png" alt="video" />
-                      <button  class='vmb-btn play-btn'  id="vmbbtn"><i class="uil uil-play"></i></button>
+                      <button  class='vmb-btn play-btn'  id="vmbbtn"  onclick="viewMore()"><i class="uil uil-play"></i></button>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                 </div>
                 <div class="Video-right">
                   <img src="./images/video4.png" alt="video" />
-                    <button  class=' vr-btn play-btn'  id="vrbtn"><i class="uil uil-play"></i></button>
+                    <button  class=' vr-btn play-btn'  id="vrbtn"  onclick="viewMore()"><i class="uil uil-play"></i></button>
                     <p class='col-3 text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
              </div>
-             <button class="view-btn">View All Videos</button>
+             <button class="view-btn"  onclick="viewMore()">View All Videos</button>
         </section>
         <section class="Insights-container section-6">
             <h1>Insights For You</h1>
@@ -241,7 +241,7 @@
                    </div>
                 </div>
             </div>
-                <button class="view-btn"> View All Articles</button>
+                <button class="view-btn"  onclick="viewMore()"> View All Articles</button>
         </section>
     </div>
     <footer class='footer'> 
