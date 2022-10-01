@@ -10,6 +10,11 @@
 </head>
 <body>
     <header class="header">
+        <input type="checkbox" name="nav-toggle" id="checkbtn"> 
+        <!-- mb-nav = mobile navbar -->
+        <div class="mb-nav">
+            <label for="checkbtn"><i class="uil uil-bars"></i></label>
+        </div>
         <div class="header-top">
             <img src="./images/logo.png" alt="logo" class="logo">
             <div class="icons">
@@ -28,6 +33,7 @@
                 <li><a href="">About Us</a></li>
             </ul>
         </nav>
+   
     </header>
     <div class="main-body container">
         <div class="ads-container" id="ads-container">
@@ -63,6 +69,9 @@
                         <th>Updated price</th>
                         <th>Changes</th>
                     </tr>
+                    <tr class="mb-row">
+                        <td><span>Swipe to trade</span></td>
+                    </tr>
                 </thead>
                 <tbody id="table-body"> <!-- data from javaScript --> <div class="line"></div> </tbody>
             <tfoot >
@@ -70,6 +79,8 @@
                     <td>
                         <div class="line"></div> 
                         <button class="view-crypto" id="view-crypto" onclick="viewMore()">View All Cryptocurrencies</button>
+                        <button class="mb-crypto-btn" id="mb-view-crypto" onclick="viewMore()"><span>View all</span></button>
+
                     </td> 
                 </tr>
             </tfoot>
@@ -105,7 +116,7 @@
                         <img src="./images/1.png" alt="card-image" class="card-image">
                     </div>
                     <div class="card-mb-col">
-                        <h3>Are your crypto <br> investments legal</h3>
+                        <h3>Are your crypto <br> investments legal?</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="user">
                             <img src="./images/avatar.png" alt="avatar" class="user-image">
@@ -122,7 +133,7 @@
                         <img src="./images/2.png" alt="card-image" class="card-image">
                     </div>
                     <div class="card-mb-col">
-                        <h3>Are your crypto <br> investments legal</h3>
+                        <h3>Are your crypto <br> investments legal?</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="user">
                             <img src="./images/avatar.png" alt="avatar" class="user-image">
@@ -139,7 +150,7 @@
                         <img src="./images/3.png" alt="card-image" class="card-image">
                     </div>
                     <div class="card-mb-col">
-                        <h3>Are your crypto <br> investments legal</h3>
+                        <h3>Are your crypto <br> investments legal?</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <div class="user">
                             <img src="./images/avatar.png" alt="avatar" class="user-image">
@@ -150,19 +161,20 @@
                         </div>
                     </div>
                  </div>
-            </div>
+                </div>
+
         </section>
         <section class="LegalUpdate-container section-4">
             <h1>Legal Updates</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <div class="LegalUpdate-body">
                 <div class='LegalUpdate-top'>
-                     <h2>Why are <br/>Cryptocurrencies  <br/>so popular</h2>
+                     <h1>Why are <br/>Cryptocurrencies  <br/>so popular?</h1>
                 </div>
                 <div class='LegalUpdate-bottom'>
                         <div class="bottom-left">
                           <h4>Cryptocurrencies appeal to their supporters <br/> for a variety of reasons</h4>
-                          <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockupsLorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</p>
+                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                           <button  class="LegalUpdate-btn" id="LegalUpdate-btn">Read More</button>
                         </div>
                         <div class="bottom-right">
@@ -176,6 +188,10 @@
                         </div>
                 </div>
             </div>
+             <!-- mobile view section -->
+             <div class="LegalUpdate-mb-body">
+
+             </div>
         </section>
         <section class="Videos-container section-5">
             <h1>Latest Videos</h1>
@@ -184,24 +200,24 @@
                 <div class="Video-left" >
                     <img src="./images/video1.png" alt="video" />
                       <button  class=' vl-btn play-btn' id="vlbtn"  onclick="viewMore()"><i class="uil uil-play"></i></button>
-                      <p class='col-1 text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p class='col-1 text'><span><i class="uil uil-label"></i></span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
                 </div>
                 <div class="Video-middle">
                   <div class="Video-middle-top">
                     <img src="./images/video2.png" alt="video" />
                       <button  class="vmt-btn play-btn"  id="vmtbtn"  onclick="viewMore()"><i class="uil uil-play"></i></button>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p><span><i class="uil uil-label"></i></span> Lorem Ipsum is simply dummy text of the printing.</p>
                   </div>
                   <div class='Video-middle-bottom'>
                     <img src="./images/video3.png" alt="video" />
                       <button  class='vmb-btn play-btn'  id="vmbbtn"  onclick="viewMore()"><i class="uil uil-play"></i></button>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <p><span><i class="uil uil-label"></i></span>Lorem Ipsum is simply dummy text of the printing.</p>
                   </div>
                 </div>
                 <div class="Video-right">
                   <img src="./images/video4.png" alt="video" />
                     <button  class=' vr-btn play-btn'  id="vrbtn"  onclick="viewMore()"><i class="uil uil-play"></i></button>
-                    <p class='col-3 text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class='col-3 text'><span><i class="uil uil-label"></i></span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
                 </div>
              </div>
              <button class="view-btn"  onclick="viewMore()">View All Videos</button>

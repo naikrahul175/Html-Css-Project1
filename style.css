@@ -2,11 +2,37 @@
     margin: 20px;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     position: relative;
     left: 30px;
+}
+
+header input {
+    display: none;
+}
+
+header .mb-nav {
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 22px;
+} 
+
+.mb-nav label {
+    margin: 0;
+    display: none;
+}
+
+label i {
+    font-size: 35px;
+    margin: 0;
+}
+/* for nav-toggle */
+#checkbtn:checked ~ nav {
+    left: 20px;
 }
 
 section {
@@ -119,9 +145,13 @@ button {
 }
 
  .left-block button {
-margin-top: 20px;
-padding: 5px;
+margin-top: 15px;
+padding: 5px 0;
 background:white;
+width: 80px;
+background: #4da9dc;
+color: white;
+font-weight: bold;
 }
 
 #ad-close {
@@ -174,8 +204,9 @@ background:white;
     margin-top: 10px;
 }
 .banner-container .left-block button {
-    padding: 10px;
+    padding: 5px;
     width: 123px;
+    background: white;
 }
 
 input {
@@ -185,10 +216,10 @@ input {
 
 #swipe-more-btn span {
     position: relative;
-    left: -34px;
+    left: -25px;
     border-radius: 20px;
     background: #4faed9;
-    padding: 11px 27px;
+    padding: 5px 35px 5px 15px;
     font-weight: bold;
     color: white;
     font-size: 16px;
@@ -200,6 +231,15 @@ span {
 }
 
     /* Crytocurrrencies  section*/
+
+    .Cryptocurrency-container {
+        text-align: center;
+    }
+    .Cryptocurrency-container p  {
+        width: 350px;
+        position: relative;
+        left: 33%;
+    }
 
 table {
     width: 100%;
@@ -215,7 +255,18 @@ table th {
     text-align: justify;
     /* margin-left: 79px; */
     position: relative;
-    left: 65px;
+    left: 130px;
+}
+
+thead .mb-row {
+    display: none;
+}
+
+table th:nth-child(1) {
+    left: 113px;
+}
+table th:nth-child(2) {
+    left: 150px;
 }
 
 
@@ -228,19 +279,19 @@ tbody tr td:nth-child(1) {
     align-items: center;
     width: 130px;
     position: relative;
-    left: 50px;
+    left:  100px;
 }
 
 tbody tr td:nth-child(2) {
     text-align: left;
     position: relative;
-    left: 90px;
+    left: 173px;
 }
 
 tbody tr td:nth-child(3) {
     text-align: left;
     position: relative;
-    left: 90px;
+    left: 150px;
 }
 
 tbody tr td:nth-child(1) img{
@@ -256,32 +307,51 @@ tbody tr td:nth-child(1) img{
  .line {
     border: 1px solid #e5e1e1;
     position: relative;
-    left: 85px;
+    left: 132px;
     top: 79px;
-    width: 81%;
+    width: 75%;
 }
 
 tfoot td .line {
     position: absolute;
-    width: 81%;
+    width: 75%;
     top: 80%;
 }
 
 .view-crypto {
-    padding: 10px;
+    padding: 5px 10px;
     width: max-content;
     position: relative;
-    left: 150%;
+    left: 170%;
     margin: 29px 0;
     background: #4ea3e0;
     color: white;
     font-weight: bold;
 }
+/* mobile view btn */
+.mb-crypto-btn {
+    display: none;
+    padding: 5px;
+    width: 100px;
+    position: relative;
+    left: 165%;
+    margin: 29px 0;
+    background: #e5e1e1;
+    bottom: 25px;
+}
 
+.mb-crypto-btn span {
+    padding: 5px 15px;
+    border-radius: 20px;
+    position: relative;
+    right: 15px;
+    background: #4faed9;
+    color: white;
+}
         /* ad's section */
 
-.ads-container .row {
-width: 90%;
+.ads-container.row {
+width: 93%;
 display: flex;
 }
 
@@ -294,14 +364,41 @@ display: flex;
     width: 100%;
 }
 
-            /* Articles section */
-.Cryptocurrency-container {
-    text-align: center;
+#ads-col-1 h1 {
+    width: 180px;
+    font-size: 26px;
+
 }
+#ads-col-1 h4 {
+   display: none;
+}
+
+#ads-col-2 h1 {
+    width: 180px;
+    font-size: 26px;
+
+}
+#ads-col-2 h4 {
+   display: none;
+}
+
+#ads-col-1 .btn{
+    margin-top: 5px;
+}
+#ads-col-2 .btn {
+    margin-top: 5px;
+}
+ /* Articles section */
+
 .Articles-container{
     text-align: center;
 }
 
+.Articles-container p  {
+    width: 350px;
+    position: relative;
+    left: 33%;
+}
 .card-container {
     width: 100%;
     display: flex;
@@ -312,10 +409,13 @@ display: flex;
 
 .card-mb-col {
     margin: 0;
+    padding-top: 10px;
 }
 .card-container button {
     background: #4897e3;
     position: absolute;
+    padding: 5px;
+    width: 85px;
     top: 20px;
     left: 10px;
     border-radius: none;
@@ -328,7 +428,7 @@ display: flex;
 
 .card-container .card {
     width: 30%;
-    max-width:360px;
+    /* max-width:360px; */
     margin: 0 ;
     background: rgba(213,222,229,0.2);
     position: relative;
@@ -342,13 +442,15 @@ display: flex;
 }
 
 .card-container .card h3 {
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
-.card-container .card p{
+.card-container .card p {
     margin: 5px 30px;
     font-size: 12px;
     color: #757a7e;
+    width: 250px;
+    left: -10px;
 }
  
 .card .user {
@@ -368,7 +470,9 @@ min-height: 30px;
 .user .user-block {
     margin: 0 0 0 10px;
 }
-
+.user .user-block h4 {
+    font-size: 12px;
+}
 .user-block ,h4 , h6 {
     margin: 0;
 }
@@ -380,8 +484,15 @@ min-height: 30px;
     /* Legal Update section */
 .LegalUpdate-container {
     text-align: center;
-    
+    top: 30px;
+
 }
+.LegalUpdate-container p {
+    width: 350px;
+    position: relative;
+    left: 33%;
+}
+
 .LegalUpdate-container .LegalUpdate-body {
     text-align: start;
     height: 400px;
@@ -399,8 +510,8 @@ min-height: 30px;
     color: white;
 }
 
-.LegalUpdate-top h2 {
-    margin: 0 0 0 40px;
+.LegalUpdate-top h1 {
+    margin: 0 0 0 90px;
     font-weight: bold;
 }
 
@@ -413,7 +524,7 @@ min-height: 30px;
 
 .LegalUpdate-bottom .bottom-left {
     width: 50%;
-    margin-left: 60px;
+    margin-left: 110px;
 }
 
 .bottom-left p , button{
@@ -423,23 +534,27 @@ min-height: 30px;
 .bottom-left .LegalUpdate-btn {
     background: #4ea3e0;
     color: white;
+    padding: 5px;
+    width: 90px;
 }
 
 .bottom-left p {
     font-size: 12px;
     color: #757a7e;
+    left: 0;
+    width: 310px;
 }
 
 .LegalUpdate-bottom  .bottom-right {
     position: absolute;
-    right: 60px;
-    top: -45%;
+    right: 110px;
+    top: -65%;
     width: 30%;
 }
 
 .bottom-right img {
     width: 100%;
-    height: 220px;
+    height: 250px;
 }
 
 .bottom-right .slider-btn {
@@ -452,8 +567,15 @@ min-height: 30px;
 
 .Videos-container{
     text-align: center;
+    top: 40px;
 }
  
+.Videos-container p{
+    width: 350px;
+    position: relative;
+    left: 33%;    
+}
+
 .Videos-container .Videos-body {
     display: flex;
     justify-content: space-between;
@@ -485,11 +607,27 @@ top: 40%;
 right: 40%;
 }
 
-.Video-left p{
+.Video-left p {
     position: absolute;
     bottom: 10%;
     color: white;
     text-align: left;
+    left: 58px;
+    width: 230px;
+    font-size: 13px;
+    font-weight: bold;
+    bottom: 10px;
+}
+
+    .Video-left p span {  
+    display: inline-block;
+    transform: rotate(180deg);
+    margin: 0;
+    position: absolute;
+    left: -28px;
+    font-size: 20px;
+    top: -3px;
+    width: 40px;
     }
 
 .Videos-body .Video-middle {
@@ -510,11 +648,24 @@ right: 40%;
 
 .Video-middle p {
     position: absolute;
-    bottom: 10%;
     color: white;
-    text-align: left; 
+    text-align: left;
+    left: 60px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 220px;
+    bottom: 10px;
 }
-   
+.Video-middle p span {
+    margin: 0;
+    position: absolute;
+    left: -85px;
+    font-size: 20px;
+    transform: rotate(180deg);
+    top: -5px;
+}
+
+
 .Video-middle .vmb-btn {
     position: absolute;
     right: 40%;
@@ -534,11 +685,27 @@ right: 40%;
     }
 
 .Video-right p {
-     position: absolute;
-     bottom: 10%;
-     color: white;
-     text-align: left;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    text-align: left;
+    left: 58px;
+    width: 230px;
+    font-size: 13px;
+    font-weight: bold;
+    bottom: 10px;
      }
+
+     .Video-right p span {  
+        display: inline-block;
+        transform: rotate(180deg);
+        margin: 0;
+        position: absolute;
+        left: -28px;
+        font-size: 20px;
+        top: -3px;
+        width: 40px;
+        }
     
 .Videos-body .Video-left img {
     width: 100%;
@@ -583,6 +750,7 @@ right: 40%;
 
 .Insights-container {
     text-align: center;
+    top: 60px;
 }
 
 .Insights-container .Insights-body {
@@ -663,19 +831,72 @@ footer {
 /* responsive */
 
 @media screen  and (max-width:480px) {
-    .header-top .logo {
-        width: 150px;
+    *{
+        margin: 0;
+    }
+   
+    /* header  */
+    .header {
+        top: 20px;
+        left: 0;
+    }
+    .header-top {
+        width: 100%;
+    }
+    header .mb-nav {
+       top: 0;
+    } 
+
+    .mb-nav label {
+        display: block;
     }
 
+    .header-top .logo {
+        width: 150px;
+        left: 80px;
+    }
+    .header-top .icons {
+        position: relative;
+        right: 40px;
+    }
     .header-top .icons i {
         font-size: 15px;
     }
-
+            /* navbar */
     nav {
-        display: none;
+        display: block;
+        width: 40%;
+        height: 30vh;
+        z-index: 1;
+        position: absolute;
+        left:-40%;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 5px -4px;
+    }
+
+    /* main body section */
+    .main-body  {
+        top: 40px;
+        left: 23px;
+    }
+
+    /* ads at top of the page */
+    #ad-close {
+        top: -1px;
+    }
+    #ad-close span {
+        top: 2px;
+        right: -42px;
     }
     .ads-container .left-block {
         left:50px;
+        top: 10px;
     }
 
     .ads-container .left-block h1 {
@@ -683,63 +904,139 @@ footer {
     }
     .ads-container .left-block h4 {
         font-size: 13px;
+       
+    }
+
+     /* banner section */
+    .banner-container 
+    {
+        top: 10px;
     }
 
     .banner-container .left-block {
-        left: 15%;
+        top: 180px;
+        left: 22px;
+        width: 380px;
     }
+
+    .banner-container .left-block h1 {
+        text-align: center;
+    }
+    .banner-container .left-block h1 br {
+        display: none;
+    }
+    .banner-container .left-block h4 {
+        display: none;
+    }
+
     .banner-container .left-block button{
         position: relative;
-        left: 50px;
+        left: 35%;
+        padding: 5px;
+    }
+    #swipe-more-btn span {
+        padding: 5px 20px;
+        left: -23px;
     }
     .banner-container .left-block .slider {
-        left: 60px;
+        /* left: 60px; */
         position: relative;
+    }
+
+    /* cryptocurrency section */
+    .Cryptocurrency-container {
+        top: 40px;
+        text-align: start;
+    }
+    .Cryptocurrency-container h1{
+       
+        font-size: 16px;
+    }
+    .Cryptocurrency-container p {
+        left: 0;
+        font-size: 12px;
+        margin: 10px 0;
     }
 
     table {
         display: block;
+        margin: 15px 0;
     }
 
     table tr th{
         left: 0;
-        font-size: 14px;
+        font-size: 12px;
         padding: 20px 10px;
+    }
+    table th:nth-child(1) {
+        left: 5px;
+    }
+    table th:nth-child(2) {
+        left: 25px;
+    }
+    table th:nth-child(3) {
+        left: 47px;
+    }
+    thead .mb-row {
+        display: block;
+    }
+    thead .mb-row td {
+        background: #efefef;
+        /* padding: 0 80px; */
+        position: absolute;
+        width: 87%;
+        left: 18px;
     }
 
     tbody{
         display: block;
-        margin: 10px 0;
+        margin: 30px 0;
     }
+
     tbody tr td:nth-child(1) {
         left: 0;
-    font-size: 12px;
-    margin: 0;
-    width: 110px;
-    margin-right: 0;
-    padding: 10px 0 10px 0;
+        font-size: 12px;
+        margin: 0;
+        width: 110px;
+        margin-right: 0;
+        padding: 10px 0 10px 0;
     }
+
     tbody tr td:nth-child(2) {
-        left: 29px;
-    font-size: 12px;
+        left: 70px;
+        font-size: 12px;
     }
+
     tbody tr td:nth-child(3){
         font-size: 12px;
+        left: 175px;
     }
     tbody tr td:nth-child(4) {
         display: none;
     }
+    tfoot td .line {
+        display: none;
+    }
+
     .line {
         left: 20px;
     }
 
     .view-crypto {
-        left: 80px;
+        display: none;
+    }
+    
+    .mb-crypto-btn {
         font-size: 10px;
+        display: block;
+        margin: 10px 0;
     }
 
-    .row {
-        display: block;
+    /* ads container */
+    .ads-container.row{
+       width: 90%;
+       top: 50px;
+
     }
     .row .ads-col:nth-child(1) {
         width: 100%;
@@ -748,20 +1045,38 @@ footer {
         display: none;
     }
 
+    /* Article section */
+
+    .Articles-container {
+        top: 80px;
+        text-align: start;
+    }
+    .Articles-container h1{
+       font-size: 16px;
+    }
+    .Articles-container p {
+        left: 0;
+        font-size: 12px;
+        margin: 10px 0;
+    }
     .card-container {
         display: block;
     }
     .card-container .card {
         display: flex;
         width: 100%;
-        margin: 10px;
+        margin: 10px 0;
+    }
+
+    .card-container .card:nth-child(3) {
+        display: none;
     }
 
     .card-container button {
-        padding: 5px;
+        padding: 3px;
         font-size: 10px;
-        top: 0;
-        left: 0;
+        /* top: 13px; */
+        left: 13px;
         width: 55px;
     }
 
@@ -780,28 +1095,42 @@ footer {
         width: 100%;
         height: 150px;
         margin: 0;
+        padding: 10px;
     }
 
     .card .card-mb-col h3 {
         font-size: 14px;
         width: 130px;
-        margin: 16px 0 0 20px;
+        margin: 16px 0 0 10px;
     }
 
     .card-container .card p {
-        font-size: 12px;
-        width: 130px;
+        font-size: 10px;
+        width: 190px;
         margin: 10px 0 0 20px;
     }
 
     .card .user {
         width: 130px;
-        margin-top: 10px;
+        margin: 10px;
     }
 
     .user .user-block {
         width: 100px;
         font-size: 12px;
+    }
+    /* LegalUpdate section */
+    .LegalUpdate-container {
+    top: 100px;
+    text-align: start;
+    }
+    .LegalUpdate-container h1{
+       font-size: 16px;
+    }
+    .LegalUpdate-container p {
+    left: 0;
+    font-size: 12px;
+    margin: 10px 0;
     }
 
     .LegalUpdate-body {
@@ -835,16 +1164,21 @@ footer {
         top: -80px;
         right: 20px;
     }
-    .LegalUpdate-bottom .bottom-right img {
+    /* .LegalUpdate-bottom .bottom-right img {
         height: 150px;
-    }
+    } */
     .bottom-right .slider-btn {
         margin: -18px 0 0 40px;
     }
     .LegalUpdate-container .LegalUpdate-body {
         height: 350px;
+        display: none;
     }
 
+    /* video container */
+    .Videos-container  {
+        top: 110px;
+    }
     .Videos-container .Videos-body {
         display: block;
     }
