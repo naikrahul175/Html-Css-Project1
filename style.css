@@ -619,6 +619,10 @@ right: 40%;
     bottom: 10px;
 }
 
+.Video-left .mb-block{
+    display: none;
+}
+
     .Video-left p span {  
     display: inline-block;
     transform: rotate(180deg);
@@ -696,6 +700,10 @@ right: 40%;
     bottom: 10px;
      }
 
+     .Video-right .mb-block {
+        display: none;
+     }
+
      .Video-right p span {  
         display: inline-block;
         transform: rotate(180deg);
@@ -740,17 +748,20 @@ right: 40%;
     margin: 0;
 } 
 
-.view-btn {
-    padding: 5px;
-    width: 120px;
-    background:#4ea3e0;
-}
+
 
         /* Insights section */
 
 .Insights-container {
     text-align: center;
     top: 60px;
+    margin-bottom: 70px;
+}
+
+.Insights-container p {
+    width: 350px;
+    position: relative;
+    left: 33%;
 }
 
 .Insights-container .Insights-body {
@@ -763,7 +774,7 @@ right: 40%;
 }
 
 .row .col-1 {
-    width: 30%;
+    width: 40%;
     margin: 10px 0;
 }
 
@@ -781,10 +792,28 @@ right: 40%;
     margin: 10px 0;
 }
 
+.row .col-2 p{
+    left: 0;
+    font-size: 14px;
+    width: 500px;
+}
+
 .col-2 button {
     margin: 0 0 0 20px;
     background: #4ea3e0;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
 }
+
+.view-btn {
+    padding: 5px;
+    width: 120px;
+    background:#4ea3e0;
+    color: white;
+    font-weight: bold;
+}
+
         /* footer */
 footer {
     padding: 10px;
@@ -798,6 +827,7 @@ footer {
 
 * footer {
     width: 105%;
+    /* top: 80px; */
 }
 
 .footer-bottom .footer-links {
@@ -1178,9 +1208,24 @@ footer {
     /* video container */
     .Videos-container  {
         top: 110px;
+        text-align: start;
     }
+
+    .Videos-container h1 {
+        font-size: 16px;
+    }
+
+    .Videos-container p {
+        left: 0;
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    
+
     .Videos-container .Videos-body {
         display: block;
+         position: relative;
+         top: 26px;
     }
     .Videos-body .Video-left {
         width: 100%;
@@ -1192,7 +1237,28 @@ footer {
     .Video-left p {
         position: relative;
         color: black;
+        display: none;
     }
+
+    .Video-left .mb-block {
+        display: block;
+        margin: 10px 0 20px 0;
+    }
+
+     .mb-block .mb-heading {
+        width: 380px;
+    }
+
+    .mb-block .mb-para {
+        width: 410px;
+        font-size: 11px;
+        margin-top: 15px;
+    }
+
+    .Video-left .mb-para {
+        display: block;
+    }
+
     .Videos-body .Video-middle {
         display: none;
     }
@@ -1206,18 +1272,38 @@ footer {
     .Video-right p {
         position: relative;
         color: black;
+        display: none;
     }
+    .Video-right .mb-block {
+         display: block;
+         margin: 10px 0 20px 0;
+    }
+    .Video-right .mb-para {
+        display: block;
+     }
     .Video-left .vl-btn {
         top: 30%;
     }
     .Videos-body button i {
-        left: -15px;
+        left: 0;
     }
     .Video-right .vr-btn {
         top: 30%;
     }
+
+    /* insights section */
+    .Insights-container  {
+        text-align: start;
+        top: 140px;
+    }
+    .Insights-container h1{
+        font-size: 16px;
+    }
+    .Insights-container p {
+        left: 0;
+    }
     .Insights-container .Insights-body {
-        display: flex;
+        display: none
     }
     .Insights-body .row:nth-child(3) {
         display: none;
