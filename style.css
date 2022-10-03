@@ -670,6 +670,10 @@ button {
   display: none;
 }
 
+.legalUpdate-slider {
+  display: none;
+}
+
 /* Videos section*/
 
 .Videos-container {
@@ -954,6 +958,10 @@ button {
   width: 100%;
 }
 
+
+.Insights-slider {
+  display: none;
+}
 
 /* footer */
 footer {
@@ -1318,9 +1326,10 @@ footer {
 
   /* LegalUpdate section */
   .LegalUpdate-container {
-    top: 100px;
+    top: 120px;
     text-align: start;
-    border: 1px solid black;
+    border: 1px solid var(--border);
+    border-radius: 10px;
     padding: 20px;
   }
   .LegalUpdate-container h1 {
@@ -1377,6 +1386,14 @@ footer {
   /* mobile view legal update*/
   .mb-LegalUpdate-body {
     display: block;
+    height: 50vw;
+  }
+
+  .mb-LegalUpdate-body .line {
+    position: absolute;
+    left: 20px;
+    width: 88%;
+    margin-top: 10px;
   }
 
   .mb-LegalUpdate-body #mb-legalCard {
@@ -1390,10 +1407,36 @@ footer {
     min-width: 48%;
   }
 
+  #mb-legalCard img {
+    border-radius: 10px 10px 0 0;
+    height: 120px;
+}
+
+#mb-legalCard .mb-card-row-2 {
+padding: 10px 20px;
+}
+
+#mb-legalCard .mb-card-row-2 h3 {
+  font-size: 14px;
+  width: 140px;
+}
+
+#mb-legalCard .mb-card-row-2 p {
+  width: 140px;
+  margin: 5px 0;
+  
+}
+
+.legalUpdate-slider {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
 
   /* video container */
   .Videos-container {
-    top: 140px;
+    top: 160px;
     text-align: start;
   }
 
@@ -1410,7 +1453,7 @@ footer {
   .Videos-container .Videos-body {
     display: block;
     position: relative;
-    top: 26px;
+    top: 20px;
   }
   .Videos-body .Video-left {
     width: 100%;
@@ -1421,7 +1464,7 @@ footer {
   }
   .Video-left p {
     position: relative;
-    color: black;
+    color: var(--black);
     display: none;
   }
 
@@ -1457,7 +1500,7 @@ footer {
   }
   .Video-right p {
     position: relative;
-    color: black;
+    color: var(--black);
     display: none;
    
   }
@@ -1488,15 +1531,15 @@ footer {
   .mb-view-videos {
     display: block;
     left: 35%;
-    top: 30px;
-    color: white;
+    top: 20px;
+    color: var(--white);
     font-weight: bold;
   }
 
   /* insights section */
   .Insights-container {
     text-align: start;
-    top: 170px;
+    top: 220px;
   }
   .Insights-container h1 {
     font-size: 16px;
@@ -1550,6 +1593,7 @@ footer {
   .mb-Insights-body {
     display: block;
   }
+
   .mb-Insights-body .mb-card-container {
     display: flex;
     position: relative;
@@ -1558,7 +1602,7 @@ footer {
   .mb-card-col {
     width: 32%;
     margin-right: 10px;
-    background: aqua;
+    background: var(--card-color);
     border-radius: 10px;
   }
   .mb-card-col .mb-card-row-1 img {
@@ -1573,7 +1617,8 @@ footer {
         width: 60px;
         font-size: 10px;
         font-weight: bold;
-       
+        background: var(--btn-color);
+        color: var(--white);
   }
 
   .mb-card-row-2  {
@@ -1619,10 +1664,17 @@ footer {
     color: #757a7e;
   }
 
+  .Insights-slider {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 35px;
+}
+
   /* footer */
   * footer {
     width: 100%;
-    top: 190px;
+    top: 260px;
     left: 5px;
   }
 
