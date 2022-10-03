@@ -19,6 +19,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+input {
+  margin: 0;
+  width: 10px;
+}
+
 header {
   position: relative;
   left: 30px;
@@ -216,18 +221,37 @@ button {
 .banner-container {
   /* width: 90%;
     position: relative; */
-  top: -40px;
+    top: -40px;
+    width: 95%;
+    margin: 0;
+    overflow: hidden;
 }
 
-.banner {
-  width: 100%;
+.banner-container .banner-slider {
+  margin: 0 3px;
+  display: flex;
+  position: relative;
+
+}
+
+.banner-slider input {
+  display: none;
+}
+
+.banner-slider .first.slide {
+  min-width: 97%;
+  position: relative;
+}
+
+.banner-container img {
+  width: 98%;
   height: 350px;
 }
 
 .banner-container .left-block {
   position: absolute;
   display: block;
-  top: 30px;
+  top: 40px;
   left: 70px;
   color: var(--white);
   width: 300px;
@@ -250,12 +274,9 @@ button {
   background: var(--white);
 }
 
-.left-block .banner-slider {
+.left-block  {
   margin-left: 0;
-}
-input {
-  margin: 0;
-  width: 10px;
+
 }
 
 #swipe-more-btn span {
@@ -273,6 +294,64 @@ input {
 span {
   width: 100px;
 }
+
+.navigation {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 80px;
+  left: 73px;
+}
+
+.banner-container .navigation-btn {
+  border: 1px solid #fff;
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin: 3px;
+}
+
+
+/* The checked attribute is used with
+        reference to <input type="radio">, 
+        when radio button is clicked the 
+        class will shift w.r.t  left margin 
+        as mentioned which results in image 
+        slider */
+      #radio1:checked~.first {
+          left: 0;
+          transition: 5s ease;
+      }
+
+      #radio2:checked~.first {
+          left: -101%;
+          margin-right: 23px;
+      }
+
+      #radio3:checked~.first {
+          left: -201%;
+      }
+
+      #radio4:checked~.first {
+          left: -301%;
+        margin-right: 18px;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Crytocurrrencies  section*/
 
@@ -1103,9 +1182,17 @@ footer {
     top: 20px;
   }
 
+  .banner-slider .first.slide {
+    min-width: 101%;
+  }
+
+  .banner-container img {
+    width: 95%;
+  }
+
   .banner-container .left-block {
     top: 180px;
-    left: 22px;
+    left: 16px;
     width: 380px;
   }
 
@@ -1134,6 +1221,32 @@ footer {
     left: -15px;
     bottom: -10px;
   }
+
+  .navigation {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  #radio1:checked~.first {
+    left: 0;
+}
+
+#radio2:checked~.first {
+    left: -101%;
+    margin-right: 0;
+}
+
+#radio3:checked~.first {
+    left: -201%;
+    margin-left: -1px;
+}
+
+#radio4:checked~.first {
+    left: -301%;
+  margin-left: -3px;
+  margin-right: 0;
+}
+
 
   /* cryptocurrency section */
   .Cryptocurrency-container {
@@ -1725,4 +1838,9 @@ nav ul li a:hover {
   color: blue;
   padding-bottom: 16px;
   border-bottom: 3px solid blue;
+}
+
+
+.navigation-btn:hover {
+  background: #de6a23;
 }
