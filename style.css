@@ -295,7 +295,7 @@ span {
   width: 100px;
 }
 
-.navigation {
+.banner-container .navigation {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -313,44 +313,30 @@ span {
 }
 
 
-/* The checked attribute is used with
-        reference to <input type="radio">, 
-        when radio button is clicked the 
-        class will shift w.r.t  left margin 
-        as mentioned which results in image 
-        slider */
+/* The checked attribute is used with reference to <input type="radio">, when radio button is clicked the 
+   class will shift w.r.t  left which results in image  slider */
+
       #radio1:checked~.first {
           left: 0;
-          transition: 5s ease;
+          transition: 2s ease;
       }
 
       #radio2:checked~.first {
           left: -101%;
           margin-right: 23px;
+          transition: 2s ease;
       }
 
       #radio3:checked~.first {
           left: -201%;
+          transition: 2s ease;
       }
 
       #radio4:checked~.first {
           left: -301%;
         margin-right: 18px;
+        transition: 2s ease;
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Crytocurrrencies  section*/
@@ -511,10 +497,15 @@ tfoot td .line {
 #ads-col-2 .btn {
   margin-top: 5px;
 }
-/* Articles section */
+
+
+      /* Articles section */
 
 .Articles-container {
   text-align: center;
+  width: 95%;
+  margin: 0;
+  overflow: hidden;
 }
 
 .Articles-container p {
@@ -522,18 +513,28 @@ tfoot td .line {
   position: relative;
   left: 33%;
 }
-.card-container {
-  width: 100%;
+
+.Article-slider {
+  position: relative;
   display: flex;
-  text-align: start;
-  justify-content: space-between;
-  /* position: relative; */
+
 }
 
-/* .card-mb-col {
-    margin: 0;
-    padding-top: 10px;
-} */
+.Article-slider input {
+  display: none;
+}
+
+ .card-container {
+  display: flex;
+  position: relative;
+  margin: 0;
+  min-width: 101%;
+ }
+
+ .card-container .card {
+  position: relative;
+  width: 100%;
+ }
 
 .card .card-mb-col:nth-child(1) {
   margin: 0;
@@ -555,14 +556,6 @@ tfoot td .line {
   color: var(--white);
   font-weight: bold;
   font-size: 15px;
-}
-
-.card-container .card {
-  width: 30%;
-  /* max-width:360px; */
-  margin: 0;
-  background: var(--card-color);
-  position: relative;
 }
 
 .card-container .card img {
@@ -613,13 +606,50 @@ h6 {
   color: #757a7e;
 }
 
-.Article-slider {
+ .Articles-container .navigation {
   position: relative;
-  left: 20px;
+  display: flex;
+  justify-content: center;
+  bottom: -10px;
+  left: 2px;
 }
 
+.Articles-container .navigation-btn {
+  border: 1px solid var(--black);
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin: 3px;
+}
 
-/* ads for mobile */
+/* article slider logic */
+
+      #ArtSli1:checked ~.card-container {
+        left: 0;
+        transition: 2s ease;
+      }
+
+      #ArtSli2:checked ~.card-container {
+        left: -101%;
+        /* margin-right: 23px; */
+        transition: 2s ease;
+      }
+
+      #ArtSli3:checked ~.card-container {
+        left: -202%;
+        transition: 2s ease;
+      }
+
+      #ArtSli4:checked ~.card-container {
+        left: -303%;
+      /* margin-right: 18px; */
+      transition: 2s ease;
+      }
+
+
+    /* ads for mobile */
+
 #ads-container-3 {
   display: none;
   position: relative;
@@ -1227,6 +1257,11 @@ footer {
     left: 10px;
   }
 
+  .banner-container .navigation {
+    bottom: 10px;
+    left: 10px;
+  }
+
   #radio1:checked~.first {
     left: 0;
 }
@@ -1358,6 +1393,7 @@ footer {
   .Articles-container {
     top: 80px;
     text-align: start;
+    height: 95vw;
   }
   .Articles-container h1 {
     font-size: 16px;
@@ -1428,9 +1464,7 @@ footer {
     font-size: 12px;
   }
 
-  .Article-slider {
-    display: none;
-  }
+  
 
 /* ads for mobile */
   #ads-container-3 {
