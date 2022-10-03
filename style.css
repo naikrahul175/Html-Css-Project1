@@ -1,3 +1,17 @@
+:root {
+  --main-color: #5de7c3;
+  --btn-color : #4da9dc;
+  --light-grey: #efefef;
+  --dark-grey : #a3a3a3;
+  --border: #e5e1e1;
+  --white: #fff;
+  --black: #000;
+  --red : rgb(255,0,0);
+  --card-color : rgba(213, 222, 229, 0.3);
+  --para-color :#757a7e;
+}
+
+
 * {
   margin: 20px;
   padding: 0;
@@ -67,15 +81,15 @@ section {
 }
 
 .icons i:first-child {
-  color: red;
+  color: var(--red);
 }
 
 .icons i:nth-child(n + 2) {
-  color: blue;
+  color: var(--btn-color)
 }
 
 nav {
-  background: #efefef;
+  background: var(--light-grey);
   position: relative;
   left: 20px;
   width: 90%;
@@ -97,7 +111,7 @@ ul {
 }
 
 .nav-links li a {
-  color: #a3a3a3;
+  color: var(--dark-grey);
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -134,7 +148,7 @@ button {
   top: 20px;
   left: 10%;
   display: block;
-  color: white;
+  color: var(--white);
   margin: 0;
 }
 
@@ -145,16 +159,16 @@ button {
 .left-block button {
   margin-top: 15px;
   padding: 5px 0;
-  background: white;
+  background: var(--white);
   width: 80px;
   background: #4da9dc;
-  color: white;
+  color: var(--white);
   font-weight: bold;
 }
 
 #ad-close {
   position: absolute;
-  right: -20px;
+  right: -30px;
   top: 30px;
   width: 20px;
   border-radius: 0;
@@ -165,8 +179,37 @@ button {
   position: absolute;
   top: -18px;
   right: -60px;
-  color: black;
+  color: var(--black);
 }
+
+/* top news  */
+.mb-top-news {
+  display: none;
+  width: 90%;
+}
+
+.mb-top-news .mb-row-news  {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.mb-top-news .line {
+  top: 0;
+  margin: 10px 0 20px 0;
+  width: 100%;
+  left: 0;
+}
+
+.mb-top-news h1 {
+  font-size: 16px;
+  margin: 20px 0 0 20px;   
+}
+.mb-row-news img {
+  height: 80px;
+  width: 80px;
+}
+
 
 /* banner section */
 
@@ -186,7 +229,7 @@ button {
   display: block;
   top: 30px;
   left: 70px;
-  color: white;
+  color: var(--white);
   width: 300px;
   /* background: red; */
 }
@@ -204,9 +247,12 @@ button {
 .banner-container .left-block button {
   padding: 5px;
   width: 123px;
-  background: white;
+  background: var(--white);
 }
 
+.left-block .banner-slider {
+  margin-left: 0;
+}
 input {
   margin: 0;
   width: 10px;
@@ -216,10 +262,10 @@ input {
   position: relative;
   left: -25px;
   border-radius: 20px;
-  background: #4faed9;
+  background: var(--btn-color);
   padding: 5px 35px 5px 15px;
   font-weight: bold;
-  color: white;
+  color: var(--white);
   font-size: 16px;
   width: 219px;
 }
@@ -241,7 +287,7 @@ span {
 
 table {
   width: 100%;
-  border: 1px solid #e5e1e1;
+  border: 1px solid var(--border);
   border-radius: 20px;
   text-align: center;
 }
@@ -295,13 +341,13 @@ tbody tr td:nth-child(1) img {
 }
 
 #Trade-btn {
-  color: #4ea3e0;
-  background: white;
+  color: var(--btn-color);
+  background: var(--white);
   border: 1px solid mediumblue;
 }
 
 .line {
-  border: 1px solid #e5e1e1;
+  border: 1px solid var(--border);
   position: relative;
   left: 132px;
   top: 79px;
@@ -320,8 +366,8 @@ tfoot td .line {
   position: relative;
   left: 170%;
   margin: 29px 0;
-  background: #4ea3e0;
-  color: white;
+  background: var(--btn-color);
+  color: var(--white);
   font-weight: bold;
 }
 /* mobile view btn */
@@ -332,7 +378,7 @@ tfoot td .line {
   position: relative;
   left: 165%;
   margin: 29px 0;
-  background: #e5e1e1;
+  background: var(--white);
   bottom: 25px;
 }
 
@@ -340,9 +386,12 @@ tfoot td .line {
   padding: 5px 15px;
   border-radius: 20px;
   position: relative;
-  right: 15px;
-  background: #4faed9;
-  color: white;
+  right: 13px;
+  background: var(--btn-color);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 12px;
+
 }
 /* ad's section */
 
@@ -354,6 +403,7 @@ tfoot td .line {
 .ads-container .ads-col {
   position: relative;
   width: 50%;
+  top: -20px;
 }
 
 .ads-col img {
@@ -414,16 +464,16 @@ tfoot td .line {
   padding-top: 10px;
 }
 .card-container button {
-  background: #4897e3;
+  background: var(--btn-color);
   position: absolute;
   padding: 5px;
   width: 85px;
-  top: 20px;
+  top: 10px;
   left: 10px;
   border-radius: none;
   display: block;
   border-radius: 0;
-  color: white;
+  color: var(--white);
   font-weight: bold;
   font-size: 15px;
 }
@@ -432,7 +482,7 @@ tfoot td .line {
   width: 30%;
   /* max-width:360px; */
   margin: 0;
-  background: rgba(213, 222, 229, 0.2);
+  background: var(--card-color);
   position: relative;
 }
 
@@ -449,7 +499,7 @@ tfoot td .line {
 .card-container .card p {
   margin: 5px 30px;
   font-size: 12px;
-  color: #757a7e;
+  color: var(--para-color);
   width: 250px;
   left: -10px;
 }
@@ -484,6 +534,52 @@ h6 {
   color: #757a7e;
 }
 
+.Article-slider {
+  position: relative;
+  left: 20px;
+}
+
+
+/* ads for mobile */
+#ads-container-3 {
+  display: none;
+  position: relative;
+  top: 90px;
+  width: 90%;
+}
+#ads-container-3 img {
+  width: 100%;
+  height: 180px;
+}
+
+#ads-container-3 .left-block {
+  position: absolute;
+  top: 2px;
+  left: 10%;
+  display: block;
+  color: var(--white);
+  margin: 0;
+}
+
+#ads-container-3 .left-block h1 {
+  font-size: 22px;
+    width: 120px;
+}
+
+#ads-container-3 .left-block h4 {
+  font-size: 14px
+}
+
+#ads-container-3 .left-block p{
+  font-size: 10px;
+  width: 220px;
+  margin: 10px 0;
+}
+
+#ads-container-3 .btn {
+  margin-top: 5px;
+}
+
 /* Legal Update section */
 .LegalUpdate-container {
   text-align: center;
@@ -506,10 +602,10 @@ h6 {
 }
 
 .LegalUpdate-body .LegalUpdate-top {
-  background: #5de7c3;
+  background: var(--main-color);
   margin: 0;
   padding: 20px;
-  color: white;
+  color: var(--white);
 }
 
 .LegalUpdate-top h1 {
@@ -534,15 +630,16 @@ button {
 }
 
 .bottom-left .LegalUpdate-btn {
-  background: #4ea3e0;
-  color: white;
+  background: var(--btn-color);
+  color: var(--white);
   padding: 5px;
   width: 90px;
 }
 
 .bottom-left p {
   font-size: 12px;
-  color: #757a7e;
+  /* color: #757a7e; */
+  color: var(--para-color);
   left: 0;
   width: 310px;
 }
@@ -562,6 +659,8 @@ button {
 .bottom-right .slider-btn {
   margin: 0;
   text-align: center;
+  position: relative;
+  left: 20px;
 }
 
 /* Videos section*/
@@ -611,7 +710,7 @@ button {
 .Video-left p {
   position: absolute;
   bottom: 10%;
-  color: white;
+  color: var(--white);
   text-align: left;
   left: 58px;
   width: 230px;
@@ -652,7 +751,7 @@ button {
 
 .Video-middle p {
   position: absolute;
-  color: white;
+  color: var(--white);
   text-align: left;
   left: 60px;
   font-weight: bold;
@@ -690,7 +789,7 @@ button {
 .Video-right p {
   position: absolute;
   bottom: 10%;
-  color: white;
+  color: var(--white);
   text-align: left;
   left: 58px;
   width: 230px;
@@ -749,8 +848,8 @@ button {
 .view-videos {
   padding: 5px;
   width: 120px;
-  background: #4ea3e0;
-  color: white;
+  background: var(--btn-color);
+  color: var(--white);
   font-weight: bold;
 }
 
@@ -764,7 +863,7 @@ button {
 }
 
 .mb-view-videos span {
-  background: #4ea3e0;
+  background: var(--btn-color);
   margin: 0;
   padding: 0;
   position: relative;
@@ -811,19 +910,20 @@ button {
   text-align: left;
   width: 70%;
   height: 200px;
-  background: #f3f3f3;
+  /* background: #f3f3f3; */
+  background: var(--card-color);
   margin: 10px 0;
 }
 
 .row .col-2 p {
   left: 0;
-  font-size: 14px;
-  width: 500px;
+  font-size: 12px;
+  width: 425px;
 }
 
 .col-2 button {
   margin: 0 0 0 20px;
-  background: #4ea3e0;
+  background: var(--btn-color);
   padding: 5px;
   color: white;
   font-weight: bold;
@@ -832,8 +932,8 @@ button {
 .view-insights {
   padding: 5px;
   width: 120px;
-  background: #4ea3e0;
-  color: white;
+  background: var(--btn-color);
+  color: var(--white);
   font-weight: bold;
 }
 
@@ -852,7 +952,7 @@ button {
 footer {
   padding: 10px;
   background: #4da9dc;
-  color: white;
+  color: var(--white);
   position: relative;
   bottom: -30px;
   margin: 0;
@@ -877,7 +977,7 @@ footer {
 }
 
 .footer-links li a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   /* font-weight: bold; */
   font-size: 16px;
@@ -886,6 +986,9 @@ footer {
 
 .foot-row {
   margin-left: 140px;
+}
+.footer-top {
+  font-weight: bold;
 }
 .footer-top i {
   margin: 0;
@@ -956,7 +1059,7 @@ footer {
   /* ads at top of the page */
   #ad-close {
     top: 7px;
-    right: -5px;
+    right: -13px;
 }
 
   #ad-close span {
@@ -975,9 +1078,14 @@ footer {
     font-size: 13px;
   }
 
+  /* top news , mobile view */
+.mb-top-news {
+  display: block;
+}
+
   /* banner section */
   .banner-container {
-    top: 10px;
+    top: 20px;
   }
 
   .banner-container .left-block {
@@ -1005,9 +1113,11 @@ footer {
     padding: 5px 20px;
     left: -23px;
   }
-  .banner-container .left-block .slider {
+  .banner-container .left-block .banner-slider {
     /* left: 60px; */
     position: relative;
+    left: -15px;
+    bottom: -10px;
   }
 
   /* cryptocurrency section */
@@ -1045,6 +1155,8 @@ footer {
   }
   thead .mb-row {
     display: block;
+    color: var(--btn-color);
+    font-weight: bold;
   }
   thead .mb-row td {
     background: #efefef;
@@ -1052,6 +1164,7 @@ footer {
     position: absolute;
     width: 87%;
     left: 18px;
+    padding: 5px;
   }
 
   tbody {
@@ -1096,12 +1209,14 @@ footer {
     font-size: 10px;
     display: block;
     margin: 10px 0;
+    background: var(--light-grey);
   }
 
   /* ads container */
   .ads-container.row {
     width: 90%;
     top: 50px;
+    display: none;
   }
   .row .ads-col:nth-child(1) {
     width: 100%;
@@ -1184,6 +1299,16 @@ footer {
     width: 100px;
     font-size: 12px;
   }
+
+  .Article-slider {
+    display: none;
+  }
+
+/* ads for mobile */
+  #ads-container-3 {
+    display: block;
+  }
+
   /* LegalUpdate section */
   .LegalUpdate-container {
     top: 100px;
