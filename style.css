@@ -663,6 +663,13 @@ button {
   left: 20px;
 }
 
+
+/* mobile feature of legal update section */
+
+.mb-LegalUpdate-body {
+  display: none;
+}
+
 /* Videos section*/
 
 .Videos-container {
@@ -939,9 +946,9 @@ button {
 
 /* mobie view  */
 
-.mb-Insights-body {
+/* .mb-Insights-body {
   display: none;
-}
+} */
 .mb-Insights-body {
   display: none;
   width: 100%;
@@ -1313,6 +1320,8 @@ footer {
   .LegalUpdate-container {
     top: 100px;
     text-align: start;
+    border: 1px solid black;
+    padding: 20px;
   }
   .LegalUpdate-container h1 {
     font-size: 16px;
@@ -1365,9 +1374,26 @@ footer {
     display: none;
   }
 
+  /* mobile view legal update*/
+  .mb-LegalUpdate-body {
+    display: block;
+  }
+
+  .mb-LegalUpdate-body #mb-legalCard {
+    display: flex;
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+  }
+
+  #mb-legalCard .mb-card-col {
+    min-width: 48%;
+  }
+
+
   /* video container */
   .Videos-container {
-    top: 110px;
+    top: 140px;
     text-align: start;
   }
 
