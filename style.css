@@ -529,6 +529,7 @@ tfoot td .line {
   position: relative;
   margin: 0;
   min-width: 101%;
+  text-align: start;
  }
 
  .card-container .card {
@@ -606,7 +607,7 @@ h6 {
   color: #757a7e;
 }
 
- .Articles-container .navigation {
+ .Articles-container .navigation2 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -614,7 +615,7 @@ h6 {
   left: 2px;
 }
 
-.Articles-container .navigation-btn {
+.Articles-container .navigation-btn2 {
   border: 1px solid var(--black);
   padding: 4px;
   border-radius: 10px;
@@ -689,10 +690,14 @@ h6 {
   margin-top: 5px;
 }
 
-/* Legal Update section */
+    /* Legal Update section */
+
 .LegalUpdate-container {
-  text-align: center;
-  top: 30px;
+     text-align: center;
+    top: 30px;
+    overflow: hidden;
+    margin: 0;
+    width: 93%;
 }
 .LegalUpdate-container p {
   width: 350px;
@@ -700,14 +705,25 @@ h6 {
   left: 33%;
 }
 
+.LegalUpdate-container .LegalUpdate-slider {
+  display: flex;
+  width: 98%;
+}
+
+.LegalUpdate-slider input {
+  display: none;
+}
+
 .LegalUpdate-container .LegalUpdate-body {
   text-align: start;
-  height: 400px;
+    height: 400px;
+    min-width: 98%;
 }
 
 .LegalUpdate-body {
   width: 100%;
   /* background: red; */
+  position: relative;
 }
 
 .LegalUpdate-body .LegalUpdate-top {
@@ -765,11 +781,51 @@ button {
   height: 250px;
 }
 
-.bottom-right .slider-btn {
+/* .bottom-right .slider-btn {
   margin: 0;
   text-align: center;
   position: relative;
   left: 20px;
+} */
+
+.navigation3 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  right: 20%;
+  bottom: 15%;
+}
+
+.navigation3 .navigation-btn3 {
+  border: 1px solid var(--black);
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  margin: 3px;
+}
+
+/* legal update slider logic */
+
+
+
+#radi1:checked ~.LegalUpdate-body  {
+  left: 0;
+  transition: 2s ease;
+}
+
+#radi2:checked ~.LegalUpdate-body  {
+  left: -102%;
+
+  transition: 2s ease;
+}
+#radi3:checked ~.LegalUpdate-body  {
+  left: -204%;
+  transition: 2s ease;
+}
+#radi4:checked ~.LegalUpdate-body  {
+  left: -305%;
+  transition: 2s ease;
 }
 
 
@@ -1525,8 +1581,13 @@ footer {
   .bottom-right .slider-btn {
     margin: -18px 0 0 40px;
   }
+
   .LegalUpdate-container .LegalUpdate-body {
     height: 350px;
+    display: none;
+  }
+
+  .navigation3 {
     display: none;
   }
 
