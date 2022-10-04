@@ -40,4 +40,33 @@ function viewMore() {
     // document.getElementById(id).alert("Pending work");
 }
 
+function playVideo(id) {
+console.log(id);
+    switch (id) {
+        case 'vlbtn' :
+            let iframe = `<div>
+            <iframe width="420px" height="345px" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                            </iframe>
+                            </div>`
+                        
+                document.getElementsByClassName("Video-left").innerHTML = iframe;
+            break;
+    
+        case 'vmtbtn' :
+            
+            break;
+
+        case 'vmbbtn' :
+            
+                break;
+         case 'vrbtn' :
+            
+                    break;
+        default:
+            console.log("not matched");
+            break;
+    }
+
+}
+
 loadTableData()
